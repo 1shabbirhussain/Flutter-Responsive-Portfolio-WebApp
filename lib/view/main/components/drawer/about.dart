@@ -8,6 +8,7 @@ class About extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 1.23,
       child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12),
         color:  bgColor,
         child: Column(
           children: [
