@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/res/constants.dart';
+import 'package:flutter_portfolio/constants/constants.dart';
+import 'package:flutter_portfolio/view/home/home.dart';
 import 'package:flutter_portfolio/view/splash/splash_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
               )
               .copyWith(bodyLarge: const TextStyle(color: bodyTextColor)),
         ),
-        home: const SplashView());
+        // home: const SplashView());
+        home: const HomePage());
   }
 }

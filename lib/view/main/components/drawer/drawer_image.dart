@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/res/custom_animated_gradeint_widget.dart';
+import 'package:flutter_portfolio/widgets/custom_animated_gradeint_widget.dart';
 
 class DrawerImage extends StatelessWidget {
   const DrawerImage({super.key});

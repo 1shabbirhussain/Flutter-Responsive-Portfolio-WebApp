@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/view/intro/components/social_media_coloumn.dart';
-import '../../../res/constants.dart';
+import 'package:flutter_portfolio/view/intro/widgets/social_media_coloumn.dart';
+import '../../../constants/constants.dart';
 class SocialMediaIconList extends StatelessWidget {
   const SocialMediaIconList({super.key});
 
