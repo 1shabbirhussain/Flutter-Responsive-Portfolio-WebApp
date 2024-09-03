@@ -17,7 +17,7 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 1000),
+      duration: const Duration(milliseconds: 2000),
     )..repeat(reverse: true); // Repeat the animation loop
   }
   @override
@@ -39,7 +39,7 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
             child: ClipRRect(
               borderRadius: BorderRadius.circular(30),
               child: Image.asset(
-                'assets/images/drawer_image.jpeg',
+                'assets/images/self3.png',
                 fit: BoxFit.cover,
               ),
             ),

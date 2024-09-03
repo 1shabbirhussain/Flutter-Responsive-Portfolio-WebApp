@@ -12,7 +12,7 @@ class DrawerImage extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(30),
         child: Image.asset(
-            'assets/images/drawer_image.jpeg',fit: BoxFit.cover,),
+            'assets/images/self1.png',fit: BoxFit.cover,),
       ),
     );
   }

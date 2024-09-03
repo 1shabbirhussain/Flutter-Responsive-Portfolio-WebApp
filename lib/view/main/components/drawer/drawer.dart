@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view/main/components/drawer/contact_icons.dart';
+import 'package:flutter_portfolio/view/main/components/drawer/online_resume.dart';
 import 'package:flutter_portfolio/view/main/components/drawer/personal_info.dart';
 import '../../../../constants/constants.dart';
 import 'knowledges.dart';
@@ -24,11 +25,12 @@ class CustomDrawer extends StatelessWidget {
                 children: [
                   PersonalInfo(),
                   ContactIcon(),
+                  Divider(),
                   MySKills(),
                   Knowledges(),
                   Divider(),
-                  SizedBox(height: defaultPadding,),
-                  // ContactIcon(),
+                  OnlineResume(),
+                  SizedBox(height: defaultPadding/2,),
                 ],
               ),
               ),
@@ -39,6 +41,8 @@ class CustomDrawer extends StatelessWidget {
     );
   }
 }
+
+
 
 
 
