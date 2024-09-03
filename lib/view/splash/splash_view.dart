@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constants/constants.dart';
 import 'package:flutter_portfolio/widgets/custom_animated_gradeint_widget.dart';
 import 'package:flutter_portfolio/view/home/home.dart';
-import 'package:flutter_portfolio/view/intro/widgets/animated_texts_componenets.dart';
 import 'package:flutter_portfolio/view/splash/widgets/animated_loading_text.dart';
 
 class SplashView extends StatefulWidget {

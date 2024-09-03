@@ -23,11 +23,12 @@ class CustomDrawer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   PersonalInfo(),
+                  ContactIcon(),
                   MySKills(),
                   Knowledges(),
                   Divider(),
                   SizedBox(height: defaultPadding,),
-                  ContactIcon(),
+                  // ContactIcon(),
                 ],
               ),
               ),
