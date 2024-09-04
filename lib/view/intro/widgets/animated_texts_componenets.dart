@@ -9,6 +9,7 @@ class AnimatedImageContainer extends StatefulWidget {
   @override
   AnimatedImageContainerState createState() => AnimatedImageContainerState();
 }
+
 class AnimatedImageContainerState extends State<AnimatedImageContainer>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
@@ -20,11 +21,13 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
       duration: const Duration(milliseconds: 2000),
     )..repeat(reverse: true); // Repeat the animation loop
   }
+
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
@@ -32,7 +35,8 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
       builder: (context, child) {
         final value = _controller.value;
         return Transform.translate(
-          offset: Offset(-5 * value, 10 * value), // Move the container up and down
+          offset:
+              Offset(-5 * value, 10 * value), // Move the container up and down
           child: HoverAnimatedContainer(
             width: widget.width!,
             height: widget.height!,
