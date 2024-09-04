@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../res/constants.dart';
+import '../../../constants/constants.dart';
 
 class MenuButton extends StatelessWidget {
   final VoidCallback? onTap;

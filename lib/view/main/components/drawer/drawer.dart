@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view/main/components/drawer/contact_icons.dart';
+import 'package:flutter_portfolio/view/main/components/drawer/online_resume.dart';
 import 'package:flutter_portfolio/view/main/components/drawer/personal_info.dart';
-import '../../../../res/constants.dart';
+import '../../../../constants/constants.dart';
 import 'knowledges.dart';
 import 'about.dart';
 import 'my_skill.dart';
+
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
   @override
@@ -18,18 +20,22 @@ class CustomDrawer extends StatelessWidget {
             Container(
               color: bgColor,
               child: const Padding(
-              padding: EdgeInsets.all(defaultPadding/2),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  PersonalInfo(),
-                  MySKills(),
-                  Knowledges(),
-                  Divider(),
-                  SizedBox(height: defaultPadding,),
-                  ContactIcon(),
-                ],
-              ),
+                padding: EdgeInsets.all(defaultPadding / 2),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    PersonalInfo(),
+                    ContactIcon(),
+                    Divider(),
+                    MySKills(),
+                    Knowledges(),
+                    Divider(),
+                    OnlineResume(),
+                    SizedBox(
+                      height: defaultPadding / 2,
+                    ),
+                  ],
+                ),
               ),
             )
           ],
@@ -38,7 +44,3 @@ class CustomDrawer extends StatelessWidget {
     );
   }
 }
-
-
-
-
