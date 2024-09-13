@@ -13,11 +13,14 @@ class AnimatedDescriptionText extends StatelessWidget {
       tween: Tween(begin: start, end: end),
       duration: const Duration(milliseconds: 200),
       builder: (context, value, child) {
-        return Text(
-          'I\'m capable of creating excellent mobile apps, handling every step from ${!Responsive.isLargeMobile(context) ? '\n' : ''}concept to deployment.',
-          // maxLines: 2,
-          overflow: TextOverflow.clip,
-          style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),
+        return SizedBox(
+          width:Responsive.isDesktop(context)? 600 : 550,
+          child: Text(
+            "I'm a certified and experienced Flutter developer, passionate about crafting high-quality mobile, desktop, and web applications. From concept to deployment, I ensure seamless performance and an intuitive user experience. My work covers Android, iOS, web, and desktop platforms, with a strong foundation in UI/UX design",
+            overflow: TextOverflow.clip,
+            style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),
+            // textAlign: Responsive.isDesktop(context) ? TextAlign.left,
+          ),
         );
       },
     );

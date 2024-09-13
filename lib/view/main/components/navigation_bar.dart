@@ -5,7 +5,9 @@ import 'package:flutter_portfolio/view/main/components/connect_button.dart';
 import '../../../constants/constants.dart';
 import 'navigation_button_list.dart';
 class TopNavigationBar extends StatelessWidget {
-  const TopNavigationBar({super.key});
+    final GlobalKey<ScaffoldState> scaffoldKey;
+
+  const TopNavigationBar({super.key, required this.scaffoldKey});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,11 +17,11 @@ class TopNavigationBar extends StatelessWidget {
           const Spacer(),
           Padding(
             padding: const EdgeInsets.all(defaultPadding),
-            child:!Responsive.isLargeMobile(context)? Image.asset('assets/images/triange_icon.png') : MenuButton(onTap: () => Scaffold.of(context).openDrawer(),),
+            child: MenuButton(onTap: () => Scaffold.of(context).openDrawer(),),
           ),
           // if(Responsive.isLargeMobile(context)) MenuButton(),
           const Spacer(flex: 2,),
-          if(!Responsive.isLargeMobile(context))  const NavigationButtonList(),
+          if(!Responsive.isLargeMobile(context))   NavigationButtonList(scaffoldKey: scaffoldKey,),
           const Spacer(flex: 2,),
           const ConnectButton(),
           const Spacer(),
