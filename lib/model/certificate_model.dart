@@ -18,6 +18,7 @@ List<CertificateModel> certificateList = [
   CertificateModel(
     name: 'Getting started with Flutter Development',
     organization: 'Coursera',
+    
     date: 'AUG 2023',
     skills: 'Flutter . Dart',
     credential:  'https://www.coursera.org/account/accomplishments/certificate/HQ4LFHSF4LKZ',
