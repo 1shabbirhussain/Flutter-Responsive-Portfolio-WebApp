@@ -7,21 +7,23 @@ import 'components/drawer/drawer.dart';
 import 'components/navigation_button_list.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 class MainView extends StatelessWidget {
-   const MainView({super.key, required this.pages});
+    MainView({super.key, required this.pages});
   final List<Widget> pages;
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: scaffoldKey,
       drawer: const CustomDrawer(),
       body: Center(
         child: Column(
           children: [
             kIsWeb && !Responsive.isLargeMobile(context) ? const SizedBox(height:defaultPadding*2,) : const SizedBox(height:defaultPadding/2,),
-             const SizedBox(
+              SizedBox(
                 height: 80,
-                child: TopNavigationBar(),
+                child: TopNavigationBar(scaffoldKey: scaffoldKey,),
             ),
-            if(Responsive.isLargeMobile(context))  const Row(children: [Spacer(),NavigationButtonList(),Spacer()],),
+            if(Responsive.isLargeMobile(context))   Row(children: [const Spacer(),NavigationButtonList(scaffoldKey: scaffoldKey,),const Spacer()],),
             Expanded(
                 flex: 9,
                 child: PageView(
