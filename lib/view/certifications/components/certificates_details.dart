@@ -52,7 +52,7 @@ class CertificateStack extends StatelessWidget {
                 ),
                 const SizedBox(height: defaultPadding/2,),
                 Text.rich(
-                  maxLines: 1,
+                  maxLines: 2,
                   TextSpan(
                       text: 'Skills : ',style: const TextStyle(color: Colors.white,),
                       children: [
