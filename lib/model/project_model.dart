@@ -9,24 +9,24 @@ class Project {
 List<Project> projectList = [
   Project(
     'Community Business Application',
-    'Presenting "Coffee" - a Flutter UI application that invites you to indulge in a delightful coffee adventure. Immerse yourself in the world of rich aroma and flavor as you browse through an exquisite selection of specialty coffees. With a user-friendly interface, exploring different blends and discovering their unique details becomes a delightful experience.',
+    'A dedicated Flutter app for the members of the International Union of Operating Engineers (IUOE) Local 94. The app allows union members and employees to easily track their work hours, view leave balances, check benefits, and access important policies and documents. It streamlines communication, reducing the need to frequently contact admins, offering a comprehensive and user-friendly platform for all work-related information.',
     'assets/images/IUOE.png',
     'https://github.com/1shabbirhussain/',
   ),
   Project(
     'E-Commerce Grocery Application',
-    'Car Control Dashboard is a user-friendly mobile application built using Flutter and powered by GetX for efficient state management. Enjoy a modern and intuitive design that adapts to various screen sizes, Interact with dynamic car controls, including speed, steering, and temperature. Realistic animations enhance the visual appeal, making it feel like you are controlling a real car!',
+    'A Flutter-based grocery store app where admins can list products and users can browse, add to cart, and purchase items. Includes full e-commerce functionality such as payment processing, order management, and a seamless shopping experience.',
     'assets/images/grocery.png',
     'https://github.com/1shabbirhussain/',
   ),
   Project(
       'Tickets Management System',
-      'Neumorphic TimeKit is an open-source project that brings together the elegance of a beautifully designed alarm system, an analog clock with a neumorphic touch, and a feature-rich stopwatch. Whether you\'re looking for a functional alarm tool, a stylish desktop clock, or a precise stopwatch, TimeKit has you covered.',
+      'App for creating and managing tickets with detailed descriptions and images. Each ticket has a unique barcode, shown in a list view. Features include CRUD operations, sorting, filtering, and Firebase-based authentication, notifications, and real-time data with REST APIs.',
       'assets/images/ticket.png',
       'https://github.com/1shabbirhussain/'),
   Project(
       'Ecommerce Application Service Based',
-      'CUI AIDER is an extraordinary application that brings together augmented reality (AR), a robust student portal, intuitive class management, and a comprehensive GPA system, providing an all-encompassing solution for students.Using AR technology, CUI AIDER offers an immersive experience, allowing users to explore the complete university campus virtually. Through AR, students can visualize buildings, navigate with interactive directions, and gain a better understanding of their surroundings.',
+      'A service-based e-commerce app, where users can log in as buyers or sellers, similar to OLX. Sellers can list services, and buyers can browse, book services for now or later, and make purchases. The app also features chat notifications for real-time communication, enhancing user experience. Implemented entirely on Firebase and REST APIs, it provides a seamless, scalable solution for service transactions and management.',
       'assets/images/TSS.png',
       'https://github.com/1shabbirhussain/'),
   // Project(

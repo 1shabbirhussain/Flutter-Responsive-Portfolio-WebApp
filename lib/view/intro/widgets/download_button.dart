@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 import '../../../constants/constants.dart';
 
 class DownloadButton extends StatelessWidget {
@@ -13,6 +12,7 @@ class DownloadButton extends StatelessWidget {
         launchUrl(Uri.parse('https://drive.google.com/file/d/1fnKo5qsAxbdEiCjZzkVT-M0PM6XRHAhG/view?usp=sharing'));
       },
       child: Container(
+        width: 220,
         alignment: Alignment.center,
         padding: const EdgeInsets.symmetric(vertical: defaultPadding/1.5,horizontal: defaultPadding*2),
         decoration: BoxDecoration(
@@ -30,6 +30,7 @@ class DownloadButton extends StatelessWidget {
               ]),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'Download Resume',

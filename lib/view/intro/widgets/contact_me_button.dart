@@ -13,6 +13,7 @@ class ContactMeButton extends StatelessWidget {
        scaffoldKey.currentState?.openDrawer();
       },
       child: Container(
+        width: 220,
         alignment: Alignment.center,
         padding: const EdgeInsets.symmetric(vertical: defaultPadding/1.5,horizontal: defaultPadding*2),
         decoration: BoxDecoration(
@@ -30,6 +31,7 @@ class ContactMeButton extends StatelessWidget {
               ]),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'Contact Me',
