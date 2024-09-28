@@ -10,7 +10,7 @@ class OnlineResume extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: TextButton.icon(
-        onPressed: () => launchUrl(Uri.parse('https://shabbirhussain.my.canva.site/copy-of-shabbir-hussain-flutter-developer')),
+        onPressed: () => launchUrl(Uri.parse('https://shabbir-hussain-flutter-developer.my.canva.site')),
         icon: const Icon(Icons.description, color: Colors.white),
         label: const Text(
           "View Online Resume",
