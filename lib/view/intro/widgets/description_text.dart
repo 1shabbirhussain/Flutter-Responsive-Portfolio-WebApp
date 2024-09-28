@@ -16,7 +16,7 @@ class AnimatedDescriptionText extends StatelessWidget {
         return SizedBox(
           width:Responsive.isDesktop(context)? 600 : 550,
           child: Text(
-            "I'm a certified and experienced Flutter developer, passionate about crafting high-quality mobile, desktop, and web applications. From concept to deployment, I ensure seamless performance and an intuitive user experience. My work covers Android, iOS, web, and desktop platforms, with a strong foundation in UI/UX design",
+            "I'm a  Software Engineer, Certified and Experienced FLUTTER DEVELOER, passionate about crafting high-quality mobile, desktop, and web applications. From concept to deployment, I ensure seamless performance and an intuitive user experience. My work covers Android, iOS, web, and desktop platforms, with a strong foundation in UI/UX design",
             overflow: TextOverflow.clip,
             style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),
             // textAlign: Responsive.isDesktop(context) ? TextAlign.left,
