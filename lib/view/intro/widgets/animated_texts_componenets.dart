@@ -43,7 +43,7 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
             child: ClipRRect(
               borderRadius: BorderRadius.circular(30),
               child: Image.asset(
-                'assets/images/self3.png',
+                'assets/images/self1.png',
                 fit: BoxFit.cover,
               ),
             ),
