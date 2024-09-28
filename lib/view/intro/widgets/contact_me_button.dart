@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../constants/constants.dart';
 
-class DownloadButton extends StatelessWidget {
-  const DownloadButton({super.key});
+class ContactMeButton extends StatelessWidget {
+  final GlobalKey<ScaffoldState> scaffoldKey;
+  const ContactMeButton({super.key, required this.scaffoldKey});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        launchUrl(Uri.parse('https://drive.google.com/file/d/1fnKo5qsAxbdEiCjZzkVT-M0PM6XRHAhG/view?usp=sharing'));
+       scaffoldKey.currentState?.openDrawer();
       },
       child: Container(
         alignment: Alignment.center,
@@ -32,14 +32,14 @@ class DownloadButton extends StatelessWidget {
         child: Row(
           children: [
             Text(
-              'Download Resume',
+              'Contact Me',
               style: Theme.of(context).textTheme.labelSmall!.copyWith(
                   color: Colors.white,
                   letterSpacing: 1.2,
                   fontWeight: FontWeight.bold),
             ),
             const SizedBox(width: defaultPadding/3,),
-            const Icon(FontAwesomeIcons.download,color: Colors.white70,size: 15,)
+            const Icon(FontAwesomeIcons.user,color: Colors.white70,size: 15,)
 
           ],
         ),

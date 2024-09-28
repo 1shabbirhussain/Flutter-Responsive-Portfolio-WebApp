@@ -6,12 +6,15 @@ import 'package:flutter_portfolio/view/main/main_view.dart';
 import 'package:flutter_portfolio/view/projects/project_view.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+   HomePage({super.key});
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
-    return  MainView(pages: [
-      const Introduction(),
+    return  MainView(
+      scaffoldKey: scaffoldKey,
+      pages: [
+      Introduction(scaffoldKey: scaffoldKey),
       ProjectsView(),
       Certifications(),
       Achievements(),

@@ -3,7 +3,8 @@ import 'package:flutter_portfolio/view%20model/responsive.dart';
 import 'package:flutter_portfolio/view/intro/widgets/intro_body.dart';
 import 'package:flutter_portfolio/view/intro/widgets/social_media_list.dart';
 class Introduction extends StatelessWidget {
-  const Introduction({super.key});
+  final GlobalKey<ScaffoldState> scaffoldKey;
+  const Introduction({super.key, required this.scaffoldKey});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,8 +21,8 @@ class Introduction extends StatelessWidget {
           if (!Responsive.isMobile(context)) SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.07,
           ),
-          const Expanded(
-            child: IntroBody(),
+           Expanded(
+            child: IntroBody(scaffoldKey: scaffoldKey,),
           ),
         ],
       ),

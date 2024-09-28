@@ -53,7 +53,7 @@ List<CertificateModel> certificateList = [
     name: 'Programming Essentials in Python',
     organization: 'Cisco Networking Academy',
     date: 'MAR 2022',
-    skills: 'PYTHON . Rest API\'s . Cloud . Django',
+    skills: 'PYTHON . Rest API\'s . Django',
     credential:  'PCAP/CISCO/2022/PEP/B1/067',
     image:  'assets/images/nocertificate.png',
   ),

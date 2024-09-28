@@ -21,7 +21,7 @@ List<AchievementsModel> achievementsList = [
     name: 'Membership of PAFLA',
     organization: 'Pakistan Freelancers Association',
     date: 'AUG 2024',
-    accomplishment: 'Pakistan Freelancers Association',
+    accomplishment: 'PAFLA Member',
     credential:  '4676011',
     image:  'assets/images/membership.png',
   ),
