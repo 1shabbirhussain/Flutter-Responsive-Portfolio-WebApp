@@ -42,9 +42,12 @@ class AchievementsStack extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    achievementsList[index].organization,
-                    style: const TextStyle(color: Colors.amber),
+                  Expanded(
+                    child: Text(
+                      maxLines: 2,
+                      achievementsList[index].organization,
+                      style: const TextStyle(color: Colors.amber),
+                    ),
                   ),
                   Text(
                     achievementsList[index].date,
@@ -58,7 +61,7 @@ class AchievementsStack extends StatelessWidget {
               Text.rich(
                 maxLines: 2,
                 TextSpan(
-                    text: 'Skills : ',
+                    text: 'Accomplishment : ',
                     style: const TextStyle(
                       color: Colors.white,
                     ),

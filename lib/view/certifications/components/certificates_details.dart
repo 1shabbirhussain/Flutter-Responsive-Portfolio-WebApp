@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view/projects/components/image_viewer.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../../../model/certificate_model.dart';
 import '../../../constants/constants.dart';
 import '../../../view model/getx_controllers/certification_controller.dart';

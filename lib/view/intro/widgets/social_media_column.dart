@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/widgets/custom_animated_gradeint_widget.dart';
 import 'package:flutter_portfolio/widgets/social_media_icon_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
