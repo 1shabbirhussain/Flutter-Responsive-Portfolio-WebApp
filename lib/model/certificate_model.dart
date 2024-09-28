@@ -55,7 +55,7 @@ List<CertificateModel> certificateList = [
     date: 'MAR 2022',
     skills: 'PYTHON . Rest API\'s . Cloud . Django',
     credential:  'PCAP/CISCO/2022/PEP/B1/067',
-    image:  '',
+    image:  'assets/images/nocertificate.png',
   ),
   CertificateModel(
     name: 'Digital Marketing 101',
@@ -63,7 +63,7 @@ List<CertificateModel> certificateList = [
     date: 'FEB 2022',
     skills: 'Digital Marketing . Social Media Marketing',
     credential:  '3230609',
-    image:  '',
+    image:  'assets/images/nocertificate.png',
   ),
   CertificateModel(
     name: 'Certified Computer Operator',

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/model/achievements_model.dart';
+import 'package:flutter_portfolio/view%20model/getx_controllers/achievements_controller.dart';
 import 'package:flutter_portfolio/view/projects/components/image_viewer.dart';
 import 'package:get/get.dart';
-import '../../../model/certificate_model.dart';
 import '../../../constants/constants.dart';
-import '../../../view model/getx_controllers/certification_controller.dart';
 
-class CertificateStack extends StatelessWidget {
-  final controller = Get.put(CertificationController());
-  CertificateStack({super.key, required this.index});
+class AchievementsStack extends StatelessWidget {
+  final controller = Get.put(AchievementsController());
+  AchievementsStack({super.key, required this.index});
   final int index;
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class CertificateStack extends StatelessWidget {
         controller.onHover(index, value);
       },
       onTap: () {
-        ImageViewer(context,certificateList[index].image);
+        ImageViewer(context,achievementsList[index].image);
       },      borderRadius: BorderRadius.circular(30),
       child: AnimatedContainer(
           padding: const EdgeInsets.all(defaultPadding),
@@ -30,7 +30,7 @@ class CertificateStack extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
-                certificateList[index].name,
+                achievementsList[index].name,
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Colors.white, fontWeight: FontWeight.bold),
                 maxLines: 1,
@@ -42,12 +42,15 @@ class CertificateStack extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    certificateList[index].organization,
-                    style: const TextStyle(color: Colors.amber),
+                  Expanded(
+                    child: Text(
+                      maxLines: 2,
+                      achievementsList[index].organization,
+                      style: const TextStyle(color: Colors.amber),
+                    ),
                   ),
                   Text(
-                    certificateList[index].date,
+                    achievementsList[index].date,
                     style: const TextStyle(color: Colors.grey, fontSize: 12),
                   ),
                 ],
@@ -58,13 +61,13 @@ class CertificateStack extends StatelessWidget {
               Text.rich(
                 maxLines: 2,
                 TextSpan(
-                    text: 'Skills : ',
+                    text: 'Accomplishment : ',
                     style: const TextStyle(
                       color: Colors.white,
                     ),
                     children: [
                       TextSpan(
-                        text: certificateList[index].skills,
+                        text: achievementsList[index].accomplishment,
                         style: const TextStyle(
                             color: Colors.grey,
                             overflow: TextOverflow.ellipsis),
@@ -83,7 +86,7 @@ class CertificateStack extends StatelessWidget {
                     ),
                     children: [
                       TextSpan(
-                        text: certificateList[index].credential,
+                        text: achievementsList[index].credential,
                         style: const TextStyle(
                             color: Colors.grey,
                             overflow: TextOverflow.ellipsis),
@@ -95,7 +98,7 @@ class CertificateStack extends StatelessWidget {
               // ),
               // InkWell(
               //   onTap: () {
-              //     launchUrl(Uri.parse(certificateList[index].credential));
+              //     launchUrl(Uri.parse(achievementsList[index].credential));
               //   },
               //   child: Container(
               //     height: 40,
