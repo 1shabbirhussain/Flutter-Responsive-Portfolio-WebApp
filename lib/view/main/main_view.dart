@@ -7,9 +7,9 @@ import 'components/drawer/drawer.dart';
 import 'components/navigation_button_list.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 class MainView extends StatelessWidget {
-    MainView({super.key, required this.pages});
-  final List<Widget> pages;
-  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+  const MainView({super.key, this.pages, required this.scaffoldKey});
+  final List<Widget>? pages;
+  final GlobalKey<ScaffoldState> scaffoldKey;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +31,7 @@ class MainView extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   controller: controller,
                   children: [
-                    ...pages
+                    ...pages!
                   ],
                 ),
             )
