@@ -85,7 +85,7 @@ final GlobalKey<ScaffoldState> scaffoldKey;
                           height: defaultPadding * 2,
                         ),
                         const DownloadButton(),
-                        if(Responsive.isMobile(context))...[
+                        if(Responsive.isLargeMobile(context))...[
                         const SizedBox(
                           height: defaultPadding,
                         ),
